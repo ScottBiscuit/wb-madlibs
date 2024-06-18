@@ -1,0 +1,30 @@
+{% extends 'base.html.njk' %}
+
+{% block title %}Generate Your Madlib | Madlibs!{% endblock title %}
+
+{% block body %}
+    <h1>Let's do this!</h1>
+    
+<form action="/madlib">
+  <p>
+    <label for="name-input">Name:</label>
+    <input id="name-input" type="text" name="name" />
+  </p>
+  <p>
+    <label for="color-input">Color:</label>
+    <input id="color-input" type="text" name="color" />
+  </p>
+  <p>
+    <label for="noun-input">Noun:</label>
+    <input id="noun-input" type="text" name="noun" />
+  </p>
+  <p>
+    <label for="adjective-input">Adjective:</label>
+    <input id="adjective-input" type="text" name="adjective" />
+  </p>
+  <p>
+    <button type="submit">Generate Madlib</button>
+  </p>
+</form>
+    </form>
+{% endblock body %}
